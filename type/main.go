@@ -1,13 +1,17 @@
 package main
 
+import (
+	"fmt"
+)
+
+type ID int
 
 var (
 	a string = "abacaxi"
 	b bool   = true
+	c ID = 1
 )
 
 func main() {
-	//short declaration, o tipo é inferido
-	c := 10
-	println(c, a, b)
+	fmt.Printf("O tipo de C é %T", c)
 }
